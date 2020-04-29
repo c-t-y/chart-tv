@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+
+
 </head>
+
 <body>
     <div class='header'>
+        <h1>Chart TV</h1>
     </div>
     <div class='container-search'>
         <input type='text' id='input'>
@@ -18,11 +25,14 @@
     <div class='container-results'>
         <div class='results'>
         </div>
-        <canvas id="myChart" width='400' height='400'></canvas>
+        <div class='container-chart' style="position: relative; height:50vh; width:70vw">
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
